@@ -1,0 +1,6 @@
+.chess-row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: 100%;
+  width: 100%;
+}

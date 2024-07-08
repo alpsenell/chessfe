@@ -1,0 +1,31 @@
+.chess-board {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: auto auto;
+  max-height: 90vh;
+
+  &__wrapper {
+    align-items: center;
+    border-radius: var(--spacing-m);
+    display: grid;
+    gap: 0;
+    grid-template-rows: repeat(8, 1fr);
+    max-width: 90vh;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 100%;
+    margin-block-start: var(--spacing-xl);
+    max-height: 90vw;
+    max-width: 90vw;
+
+    &__wrapper {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.chess-square {
+  $parent: &;
+  aspect-ratio: 1 / 1;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  position: relative;
+
+  &--light {
+    background-color: var(--square-color-light);
+
+    &#{$parent}--highlighted {
+      background-color: var(--highlight-color-light);
+    }
+
+    &:hover {
+      background-color: var(--highlight-color-light);
+    }
+
+    &:active {
+      background-color: var(--pressed-color-light);
+    }
+
+    #{$parent}__letter,
+    #{$parent}__number {
+      color: var(--black);
+    }
+  }
+
+  &--dark {
+    background-color: var(--square-color-dark);
+
+    &#{$parent}--highlighted {
+      background-color: var(--highlight-color-dark);
+    }
+
+    &:hover {
+      background-color: var(--highlight-color-dark);
+    }
+
+    &:active {
+      background-color: var(--pressed-color-dark);
+    }
+  }
+
+  &__number {
+    color: var(--white);
+    left: var(--spacing-m);
+    position: absolute;
+    top: var(--spacing-s);
+  }
+
+  &__letter {
+    bottom: var(--spacing-s);
+    color: var(--white);
+    right: var(--spacing-m);
+    position: absolute;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__number {
+      left: var(--spacing-s);
+    }
+
+    &__letter {
+      right: var(--spacing-s);
+    }
+  }
+}

@@ -2,5 +2,27 @@
   "name": "chess-frontend-tests",
   "description": "FrontEnd Programming Challenge for Chess.com",
   "license": "MIT",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:e2e": "cypress open --component --browser chrome"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/test-utils": "^2.4.6",
+    "cypress": "^13.13.0",
+    "jsdom": "^24.1.0",
+    "sass": "^1.77.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0",
+    "vue-tsc": "^2.0.21"
+  }
 }

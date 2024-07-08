@@ -1,0 +1,36 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --main-bg: #312e2b;
+  --button-bg: #81b64c;
+  --button-bg-hover: #a3d160;
+  --highlight-color-dark: #e7bf5d;
+  --highlight-color-light: #f1d27b;
+  --pressed-color-dark: #d7bd75;
+  --pressed-color-light: #e8cc87;
+  --square-color-dark: #d8a46d;
+  --square-color-light: #eccba5;
+  --sidebar-title-color: #21201d;
+  --sidebar-content-color: #262522;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+}
+
+.main {
+  background-color: var(--main-bg);
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: var(--spacing-xl);
+  height: 100dvh;
+  padding-left: var(--spacing-xl);
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
