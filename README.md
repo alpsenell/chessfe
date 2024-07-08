@@ -3,6 +3,9 @@
 #### Welcome to the [Chess.com](https://chess.com) front end programming challenge!
 
 ---
+### Deployed version can be found [here](https://chessfe.vercel.app/)
+
+---
 #### Additionally unit testing & end-to-end testing is added.
 
 ---
